@@ -1,0 +1,10 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+}
