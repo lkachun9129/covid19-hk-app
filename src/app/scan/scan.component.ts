@@ -24,7 +24,7 @@ export class ScanComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.scanner.enable = true;
+    this.scanner.enable = false;
   }
 
   camerasNotFoundHandler() {}

@@ -3,6 +3,7 @@
   width: 100%;
   color: white;
   font-family: Calibri;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
   font-size: 16px;
 }
 
@@ -34,9 +35,9 @@
   z-index: 2;
   top: 0px;
   width: 100%;
-  height: 50px;
-  font-size: 1em;
-  background-color: #13b188;
+  height: 55px;
+  font-size: 1.2em;
+  background-color: #12b188;
 }
 
 .instruction {
@@ -45,7 +46,7 @@
   top: calc(100% / 2 + 160px);
   width: 100%;
   height: 50px;
-  font-size: 0.8em;
+  font-size: 1.1em;
 }
 
 .bottom-content {

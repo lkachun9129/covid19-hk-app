@@ -10,11 +10,17 @@ export class ResultComponent implements OnInit {
   currentDateTime: Date;
   locationName: string;
 
+  isAuto: boolean = true;
+
   constructor(private readonly _appService: AppService) {
     this.locationName = this._appService.getLocationName();
   }
 
   ngOnInit() {
     this.currentDateTime = new Date();
+  }
+
+  toggleAuto() {
+    this.isAuto = !this.isAuto;
   }
 }

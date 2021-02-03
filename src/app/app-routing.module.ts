@@ -14,12 +14,12 @@ const routes: Routes = [
   },
   {
     path: "",
-    redirectTo: "scan",
+    redirectTo: "result",
     pathMatch: "full"
   },
   {
     path: "**",
-    redirectTo: "scan"
+    redirectTo: "result"
   }
 ];
 
