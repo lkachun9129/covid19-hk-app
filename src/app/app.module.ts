@@ -8,11 +8,13 @@ import { ZXingScannerModule } from "@zxing/ngx-scanner";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppService } from "./app-service";
 import { ResultComponent } from './result/result.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from "src/environments/environment";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, ZXingScannerModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, ZXingScannerModule, AppRoutingModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
   declarations: [AppComponent, ScanComponent, ResultComponent],
   providers: [AppService],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
